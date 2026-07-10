@@ -275,7 +275,7 @@ menu_config() {
     fi
 
     nl
-    read -rp "$(echo -e "  Alvo IP/CIDR/hostname [${TARGET:-ex: 192.168.1.0/24}]: ")" t
+    read -rp "$(echo -e "  Alvo IP/CIDR/hostname [${TARGET:-ex: 192.168.1.0/24, exemplo.com, 200.204.1.2/32}]: ")" t
     [[ -n "$t" ]] && TARGET="$t"
 
     read -rp "$(echo -e "  LHOST — seu IP [$(get_local_ip)]: ")" lh
